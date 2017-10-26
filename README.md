@@ -22,8 +22,7 @@ Go to www.rstudio.com and click on the "Download RStudio" button.
 Click on "Download RStudio Desktop."
 Click on the version recommended for your system, or the latest Windows version, and save the executable file.  Run the .exe file and follow the installation instructions. 
 
-Once both Rstudio and R are installed, open the Rstudio shell. Go to file>new file> then navigate to the location where the open mlb_salaries.rmd file is stored. Once the file is open, click the knit button in the upper left hand corner to produce an html output. 
-
+Once both Rstudio and R are installed, open the Rstudio shell. In order to open the mlb_salaries.rmd file, click on the clone or download button located at the top right hand corner of this github repository. Download the zip file named ...
 
 
 Step-by-step instructions:
