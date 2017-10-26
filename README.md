@@ -57,8 +57,12 @@ Wait while all the parts of the R Commander package are installed.
 
 Once both Rstudio and R are installed, open the Rstudio shell. 
 In order to open the mlb_salaries.rmd file, click on the clone or download button located at the top right hand corner of this github repository. 
-Click "Download Zip". Once the Zip file is downloaded, go into the zip file and right click on the file called mlb_salaries.rmd and click open. 
-This should open the file in the Rstudio environment. Finally hit the knit button in the upper left hand corner which should output my response as an html file.
+Click "Download Zip". Navigate into the zip file. Since the file was compressed, click 'Extract All' at the top of the screen. 
+A window should pop up with the unzipped folder. Click into the folder. 
+Right click on the file called mlb_salaries.rmd and click open. 
+This should open the file in the Rstudio environment. 
+Finally hit the knit button in the upper left hand corner which should output my response as an html file. 
+
 
 
 Step-by-step instructions on creating the response:
