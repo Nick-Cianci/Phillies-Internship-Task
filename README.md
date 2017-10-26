@@ -1,8 +1,8 @@
 # Phillies-Internship-Task
-This repository includes the html output for computing the Qualified Offer named mlb_salaries.html along with this README file which includes step-by-step instructions to completing the data science portion of the task, and my responses to the open ended questions.
+This repository includes the source code for a html output for computing the Qualified Offer named mlb_salaries.html, as well as the rmarkdown file called mlb_salaries.rmd, along with this README file which includes step-by-step instructions to completing the data science portion of the task, and my responses to the open ended questions.
  
 
-The full response to the Two-Part Question Option 2 Part B can be found at the mlb_salaries.html file.This task was completed entriely in RStudio. All packages used are free and readily available for use.  
+The full response to the Two-Part Question Option 2 Part B can be found at the Calculating_Qualified_Offer.docz file.This task was completed entriely in RStudio. All packages used are free and readily available for use.  
 
 Step-by-step instructions:
 
