@@ -1,8 +1,30 @@
 # Phillies-Internship-Task
-This repository includes the source code for a html output for computing the Qualified Offer named mlb_salaries.html, as well as the rmarkdown file called mlb_salaries.rmd, along with this README file which includes step-by-step instructions to completing the data science portion of the task, and my responses to the open ended questions which is named Responses.
+This repository includes the source code for a html output for computing the Qualified Offer named mlb_salaries.html, as well as the rmarkdown file called mlb_salaries.rmd, along with this README file which includes step-by-step instructions on how I completed the data science portion of the task, and my responses to the open ended questions which is named Responses.
  
 
-The full response to the Two-Part Question Option 2 Part B can be found in the word document called Calculating_Qualified_Offer.docz in this respository OR copy and paste the following link into a web browser to view the html output; file:///C:/Users/Nicholas/Documents/MLB%20salaries/mlb_salaries.html .This task was completed entriely in RStudio. All packages used are free and readily available to be installed and used.  
+The output I produced for the Two-Part Question Option 2 Part B can be found in the word document called Calculating_Qualified_Offer.docz in this respository OR copy and paste the following link into a web browser to view the html output; file:///C:/Users/Nicholas/Documents/MLB%20salaries/mlb_salaries.html . This task was completed entriely in RStudio. All packages used are free and readily available to be installed and used.  
+
+In order to access this application, r and rstudio must be installed.  Complete the following steps to install and run the application successfully. 
+
+To Install R on Windows:
+
+Go to the following website www.r-project.org
+Click the "download R" link in the middle of the page under "Getting Started."
+Select a CRAN location (pick the closest location) and click the corresponding link.  
+Click on the "Download R for Windows" if you run Windows. The link is at the top of the page.  
+Click on the "install R for the first time" link at the top of the page.
+Click "Download R for Windows" and save the executable file somewhere on your computer.  Run the .exe file and follow the installation instructions.  
+Now that R is installed, you need to download and install RStudio. 
+
+To Install RStudio on Windows:
+
+Go to www.rstudio.com and click on the "Download RStudio" button.
+Click on "Download RStudio Desktop."
+Click on the version recommended for your system, or the latest Windows version, and save the executable file.  Run the .exe file and follow the installation instructions. 
+
+Once both Rstudio and R are installed, open the Rstudio shell. Go to file>new file> then navigate to the location where the open mlb_salaries.rmd file is stored. Once the file is open, click the knit button in the upper left hand corner to produce an html output. 
+
+
 
 Step-by-step instructions:
 
