@@ -26,19 +26,33 @@ Click on the version recommended for your system, or the latest Windows version,
 Install R, RStudio, and R Commander in Mac OS X:
 
 Open this url in a web browser: http://cran.us.r-project.org/ 
+
 click on “Download R for Mac OS X” > “R-2.x.x.pkg (latest version)” 
+
 Follow the installation wizards instructions (the default settings are fine)
+
 Download RStudio from the following url: http://rstudio.org/download/desktop.
+
 Install RStudio by dragging the application icon to your Applications folder.
+
 Download Tcl/Tk from http://cran.r-project.org/bin/macosx/tools/ (click on tcltk-8.x.x-x11.dmg; OS X needs this to run R Commander.)
+
 Install Tcl/Tk.
+
 Go to your Applications folder and find a folder named Utilities. Verify that you have a program named “X11” there. If not, go to http://xquartz.macosforge.org/ and download and install the latest version of XQuartz.
+
 X11 in Applications/Utilities
+
 Open RStudio.
+
 Go to the “Packages” tab and click on “Install Packages”. The first time you’ll do this you’ll be prompted to choose a CRAN mirror. R will download all necessary files from the server you select here. Choose the location closest to you (probably “USA CA 1” or “USA CA 2”, which are housed at UC Berkeley and UCLA, respectively).
+
 Install packages in OS X
+
 Start typing “Rcmdr” until you see it appear in a list. Select the first option (or finish typing Rcmdr), ensure that “Install dependencies” is checked, and click “Install”.
+
 Install Rcmdr in OS X
+
 Wait while all the parts of the R Commander package are installed.
 
 Once both Rstudio and R are installed, open the Rstudio shell. 
