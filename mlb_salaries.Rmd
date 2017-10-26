@@ -1,0 +1,114 @@
+---
+title: "Calculating a Qualifying Offer from Web Scraped Data"
+author: "Nick Cianci"
+date: "October 24, 2017"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE , eval=FALSE}
+#Install necessary packages
+
+install.packages('DataComputing')
+install.packages('rvest')
+install.packages('readr')
+install.packages('scales')
+install.packages('knitr')
+```
+
+
+```{r, warning=FALSE, message=FALSE}
+#Load in relevant packages
+library('DataComputing')
+library('rvest')
+library('readr')
+library('scales')
+library('knitr')
+```
+
+```{r, warning=FALSE, message=FALSE}
+#Read the url
+#Source for webscraping commands: 'https://rpubs.com/Radcliffe/superbowl'
+
+url <- 'https://questionnaire-148920.appspot.com/swe/'
+webpage <- read_html(url)
+```
+
+
+```{r, warning=FALSE , message=FALSE}
+#Creates the data table from web scraped data and returns the first 6 rows
+
+mlb_table <- html_nodes(webpage, 'table')
+plr_sal <- html_table(mlb_table)[[1]]
+names(plr_sal) <- c("Player Name", "Salary ($)")
+kable(head(plr_sal))
+
+```
+
+
+
+
+```{r, warning=FALSE, message=FALSE}
+#Data Cleaning: removed rows with no salary data 
+
+clean_sal<-(
+  plr_sal %>%
+  filter(`Salary ($)`!= 'no salary data')
+)
+
+```
+
+
+```{r, warning=FALSE, message=FALSE}
+#Strip Salaries of punctuation and sort them into descending order
+
+sorted <- sort(parse_number(clean_sal$`Salary ($)`), decreasing = TRUE)
+
+#Take the average of the top 125 salaries and format correctly
+#Source for dollar_format()(): 'https://rdrr.io/cran/scales/man/dollar_format.html'
+
+
+top125_avg <- mean(sorted[0:124] )
+QO <- dollar_format()(top125_avg)
+
+#Prints what the Qualifying Offer will be
+
+paste('The monetary value of an upcoming Qualifying Offer is',QO)
+
+
+
+```
+
+```{r}
+#Prepares clean_sal for graphing
+clean_sal$`Salary ($)`<-(sort(parse_number(clean_sal$`Salary ($)`)))
+
+#Creates a density plot of all mlb salaries with the vertical line being the Qualified Offer
+
+ clean_sal %>%
+  ggplot(aes(x= `Salary ($)`))+
+  geom_density(color = "gray", fill="gray", alpha = 0.75)+
+  xlab("MLB Salaries")+ylab("Density (1/kg)")+geom_vline(xintercept = top125_avg)
+
+
+
+```
+```{r}
+#Extracts the salary as a number and sorts them in descending order
+clean_sal$`Salary ($)`<-(sort(parse_number(clean_sal$`Salary ($)`),decreasing = TRUE))
+
+#Takes the top half of the salaries in Major Leagues
+clean_sal$`Salary ($)`<-clean_sal$`Salary ($)`[0:(length(clean_sal$`Salary ($)`)/2)]
+
+#Creates a density plot for the top half of the largest salaries and plots a vertical line where the Qualified Offer falls
+
+clean_sal %>%
+  ggplot(aes(x= `Salary ($)`))+
+  geom_density(color = "gray", fill="gray", alpha = 0.75)+
+  xlab("MLB Salaries")+ylab("Density (1/kg)")+geom_vline(xintercept = top125_avg)
+
+```
+
