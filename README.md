@@ -1,7 +1,9 @@
 # Phillies-Internship-Task
-To access the 250 word response to the Required question and the 500 word response to part A of Question 2 go to the Responses page in this repository. 
+To access the 250 word response to the Required question and the 500 word response to part A of Question 2 go to the Phillies Open-ended Responses.docz file in this repository. Click View Raw to view the word document. Another way to view the word document will be discussed later on in this document.
  
-The output I produced for the Two-Part Question Option 2 Part B can be found in the word document called Calculating_Qualified_Offer.docz in this respository OR copy and paste the following link into a web browser to view the html output; file:///C:/Users/Nicholas/Documents/MLB%20salaries/mlb_salaries.html . This task was completed entriely in RStudio. All packages used are free and readily available to be installed and used.  
+If you want the output I produced for the Two-Part Question Option 2 Part B it can be found in the word document called Calculating_Qualified_Offer.docz in this respository OR copy and paste the following link into a web browser to view the html output; file:///C:/Users/Nicholas/Documents/MLB%20salaries/mlb_salaries.html . 
+
+This task was completed entriely in RStudio. All packages used are free and readily available to be installed and used.  
 
 In order to access this application, r and rstudio must be installed.  Complete the following steps to install and run the application successfully. 
 
@@ -55,11 +57,14 @@ Install Rcmdr in OS X
 Wait while all the parts of the R Commander package are installed.
 
 Once both Rstudio and R are installed, open the Rstudio shell. 
-In order to open the mlb_salaries.rmd file, click on the clone or download button located at the top right hand corner of this github repository. 
+TO OPEN mlb_salaries.rmd AND RUN IN RSTUDIO:
+
+In this repository, click on the 'clone or download' button located at the top right hand corner. 
 Click "Download Zip". Navigate into the zip file. Since the file was compressed, click 'Extract All' at the top of the screen. 
 A window should pop up with the unzipped folder. Click into the folder. 
 Right click on the file called mlb_salaries.rmd and click open. 
-This should open the file in the Rstudio environment. 
+The Phillies Open-ended Responses.docz word document can also be accessed and viewed from this folder.
+The mlb_salaries.rmd should open in the Rstudio environment. 
 Finally hit the knit button in the upper left hand corner which should output my response as an html file. 
 
 
